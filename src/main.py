@@ -4,10 +4,12 @@
 This is hello function
 """
 from engine import Engine
+from decorators import logfunc
 
-def foo():
+@logfunc(True)
+def foo(param=None):
     e = Engine()
 
 print("start....")
-foo()
+foo(param=123)
 print("end....")
