@@ -3,9 +3,11 @@
 """
 This is hello function
 """
+from engine import Engine
 
-def hello(name="nobody"):
-    print("Your name is %s" % name)
+def foo():
+    e = Engine()
 
-hello()
-
+print("start....")
+foo()
+print("end....")
